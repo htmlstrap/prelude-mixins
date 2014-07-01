@@ -2,6 +2,7 @@
     "table": ["center-block",
               "clearfix",
               "hidden",
+              "rem",
               "margin",
               "padding",
               "resizable",

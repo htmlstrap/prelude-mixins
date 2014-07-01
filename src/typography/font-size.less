@@ -21,39 +21,6 @@
 // .font-size-em(14px, 18px);
 // -----------------------------------------------
 
-
-// .rem
-// -------
-// property: margin | padding | width | height
-// value: rem
-.rem(@property, @value, @default-font-size: @default-font-size) {
-    @length: length(@value);
-    @default-value: unit(@default-font-size);
-
-    .inseption(@property, @value) when (@length = 1) {
-        @px-value: unit(unit(extract(@value, 1))*@default-value,px);
-    .property-inseption(@property, @px-value)
-    }
-    .inseption(@property, @value) when (@length = 2) {
-        @px-value: unit(unit(extract(@value, 1))*@default-value,px) unit(unit(extract(@value, 2))*@default-value,px);
-    .property-inseption(@property, @px-value)
-    }
-    .inseption(@property, @value) when (@length = 3) {
-        @px-value: unit(unit(extract(@value, 1))*@default-value,px) unit(unit(extract(@value, 2))*@default-value,px) unit(unit(extract(@value, 3))*@default-value,px);
-    .property-inseption(@property, @px-value)
-    }
-    .inseption(@property, @value) when (@length = 4) {
-        @px-value: unit(unit(extract(@value, 1))*@default-value,px) unit(unit(extract(@value, 2))*@default-value,px) unit(unit(extract(@value, 3))*@default-value,px) unit(unit(extract(@value, 4))*@default-value,px);
-    .property-inseption(@property, @px-value)
-    }
-
-    .property-inseption(@property, @px-value) {
-        @output: ~'0; @{property}: @{px-value}; @{property}: @{value}';
-        -pl-property: @output;
-    }
-    .inseption(@property, @value);
-}
-
 // Font size
 // -----------------
 // value: px | em | %

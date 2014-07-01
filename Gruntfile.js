@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = function(grunt) {
-    var compatibility_pkg = grunt.file.readJSON('src/compatibility/table.json'),
-        images_pkg = grunt.file.readJSON('src/images/table.json'),
-        typography_pkg = grunt.file.readJSON('src/typography/table.json'),
-        utilities_pkg = grunt.file.readJSON('src/utilities/table.json'),
+    var compatibility_pkg = grunt.file.readJSON('src/compatibility/_table.json'),
+        images_pkg = grunt.file.readJSON('src/images/_table.json'),
+        typography_pkg = grunt.file.readJSON('src/typography/_table.json'),
+        utilities_pkg = grunt.file.readJSON('src/utilities/_table.json'),
         compatibility_table = '', images_table = '', typography_table = '', utilities_table = '',
         compatibility_src = [], images_src = [], typography_src = [], utilities_src = [];
         var table = function(value_table, value_pkg) {
